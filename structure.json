@@ -1,0 +1,22 @@
+{
+  "lr1": {
+    "name": "Лабораторна робота №1",
+    "path": "labs/lab1/",
+    "sections": {
+      "Опис предметного середовища": "subject_environment.html",
+      "Тема, Мета, Місце розташування лаби №1": "location.html",
+      "СТРУКТУРА ДОКУМЕНТА": "structure.html",
+      "ТАБЛИЦІ": "tables.html",
+      "ФОРМИ": "forms.html",
+      "ЗОБРАЖЕННЯ": "images.html",
+      "ВИСНОВКИ": "conclusion.html"
+    }
+  },
+  "lr2": {
+    "name": "Лабораторна робота №2",
+    "path": "labs/lab2/",
+    "sections": {
+      "Is coming soon...": ""
+    }
+  }
+}
