@@ -1,10 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<style>
+    #content_area img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+    }
+    #content_area img + p {
+        text-align: center;
+    }
+</style>
 
-</body>
-</html>
+<p>
+    На сторінках <b>administration.html</b>, <b>car.html</b> та <b>cars.html</b> в нас присутні таблиці 1 та 2, а на сторінці <b>car.html</b> присутня також таблиця 3:
+</p>
+<ol>
+    <li>
+        <p>Таблиця з характеристиками авто:</p>
+        <pre>
+&lt;table&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;img src="img/engine.svg" alt="engine icon"&gt;
+            &lt;p&gt;x л&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;img src="img/fuel.svg" alt="fuel icon"&gt;
+            &lt;p&gt;тип пального&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;img src="img/transmission.svg" alt="transmission icon"&gt;
+            &lt;p&gt;тип кпп&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;img src="img/passenger.svg" alt="passenger icon"&gt;
+            &lt;p&gt;x людей&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;img src="img/conditioner.svg" alt="conditioner icon"&gt;
+            &lt;p&gt;тип кондиціонера&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;img src="img/fuel consumption.svg" alt="fuel consumption icon"&gt;
+            &lt;p&gt;x л/100км&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </pre>
+        <img src="labs/lab1/img/table1.png" alt="car features table image">
+        <p>Рисунок 1 – Таблиця з характеристиками авто</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Таблиця з цінами прокату авто:</p>
+        <pre>
+&lt;table&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Період&lt;/td&gt;
+        &lt;td&gt;1-3 діб&lt;/td&gt;
+        &lt;td&gt;4-9 діб&lt;/td&gt;
+        &lt;td&gt;10-25 діб&lt;/td&gt;
+        &lt;td&gt;26-89 діб&lt;/td&gt;
+        &lt;td&gt;Завдаток
+            &lt;button&gt; ?&lt;/button&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ціна за добу&lt;/td&gt;
+        &lt;td&gt;x грн&lt;/td&gt;
+        &lt;td&gt;x грн&lt;/td&gt;
+        &lt;td&gt;x грн&lt;/td&gt;
+        &lt;td&gt;x грн&lt;/td&gt;
+        &lt;td&gt;x грн&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </pre>
+        <img src="labs/lab1/img/table2.png" alt="car prices table image">
+        <p>Рисунок 2 – Таблиця з цінами прокату авто</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Таблиця з опціями прокату:</p>
+        <pre>
+&lt;table&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;h3&gt;Вартість прокату включає в себе&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Страховку автомобіля&lt;/li&gt;
+                &lt;li&gt;Цілодобову підтримку 24/7&lt;/li&gt;
+                &lt;li&gt;Допомогу в дорозі&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;h3&gt;Додаткові опції&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;GPS-навігатор &lt;b&gt;200грн/доба&lt;/b&gt;&lt;/li&gt;
+                &lt;li&gt;Дитяче автокрісло &lt;b&gt;200грн/доба&lt;/b&gt;&lt;/li&gt;
+                &lt;li&gt;Доставка(м.Рівне±10км) і підбір автомобіля &lt;b&gt;400грн&lt;/b&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </pre>
+        <img src="labs/lab1/img/table3.png" alt="car rental options table image">
+        <p>Рисунок 3 – Таблиця з опціями прокату</p>
+    </li>
+</ol>

@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<style>
+    #content_area img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+    }
+    #content_area img + p {
+        text-align: center;
+    }
+</style>
 
-</body>
-</html>
+<p>На сторінці <b>login.html</b> в нас присутня форма для авторизації:</p>
+<pre>
+&lt;form&gt;
+    &lt;h2&gt;Авторизація&lt;/h2&gt;
+    &lt;label for="username"&gt;Логін:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="username" required&gt;&lt;br&gt;
+    &lt;label for="password"&gt;Пароль:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="password" id="password" required&gt;&lt;br&gt;
+    &lt;input type="submit" value="Увійти"&gt;
+&lt;/form&gt;
+</pre>
+<img src="labs/lab1/img/form1.png" alt="login form image">
+<p>Рисунок 1 – Форма авторизації</p>
