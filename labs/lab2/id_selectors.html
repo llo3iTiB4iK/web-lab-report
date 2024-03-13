@@ -1,0 +1,91 @@
+<style>
+    #content_area img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        max-width: 90%;
+    }
+    #content_area img + p {
+        text-align: center;
+    }
+</style>
+
+<p>
+    Для надання нашому WEB застосунку необхідного вигляду, були застосовані такі селектори ідентифікаторів:
+</p>
+<ol>
+    <li>
+        <p>Я підготував три типи фонів, для застосування різних фонів до різних сторінок, для тега body на кожній сторінці постановлюємо різні id та застосуємо наступні правила:</p>
+        <pre>
+#main_page {
+    background-image: url("img/bg1.jpeg");
+}
+#auto_list_page, #car_page, #login_page {
+    background-image: url("img/bg2.jpg");
+}
+#rules_page {
+    background-color: #f1e6c5;
+}
+#about_us_page, #admin_page {
+    background-image: url("img/bg3.jpg");
+}
+        </pre>
+        <img src="labs/lab2/img/idselectors1.png" alt="main page and it's background">
+        <p>Рисунок 1 – Головна сторінка з встановленим фоном</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>В навігаційній панелі, для посилання на сторінку, на якій ми і так знаходимось зараз, додамо ідентифікатор, за яким даватимемо посиланню унікальний вигляд:</p>
+        <pre>
+#link_to_current_page {
+    background-color: #257929;
+}
+        </pre>
+        <img src="labs/lab2/img/idselectors2.png" alt="element with id 'link_to_current_page'">
+        <p>Рисунок 2 – Посилання на сторінку переліку авто на сторінці переліку авто має свій вигляд</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Для панелі фільтрів на сторінці переліку авто налаштуємо візуальний вигляд:</p>
+        <pre>
+#filters {
+    margin: 0 auto 50px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 75%;
+    background-color: white;
+}
+        </pre>
+        <img src="labs/lab2/img/idselectors3.png" alt="element with id 'filters'">
+        <p>Рисунок 3 – Панель фільтрів з ідентифікатором "filters"</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Для списка правил застосуємо унікальні стилі:</p>
+        <pre>
+#rules_list {
+    background-color: #FF8D8D;
+    margin: auto 2%;
+    padding:.5% 2% .5% 3%;
+}
+        </pre>
+        <img src="labs/lab2/img/idselectors4.png" alt="element with id 'rules_list'">
+        <p>Рисунок 4 – Приклад списку з ідентифікатором "rules_list"</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Для таблиці з переліком послуг, що включаються в ціну прокату, застосуємо унікальні стилі:</p>
+        <pre>
+#price_includes {
+    margin: 50px auto 0;
+}
+        </pre>
+        <img src="labs/lab2/img/idselectors5.png" alt="element with id 'price_includes'">
+        <p>Рисунок 5 – Приклад таблиці з ідентифікатором "price_includes"</p>
+    </li>
+</ol>

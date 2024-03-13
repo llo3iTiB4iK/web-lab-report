@@ -1,0 +1,77 @@
+<style>
+    #content_area img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        max-width: 90%;
+    }
+    #content_area img + p {
+        text-align: center;
+    }
+</style>
+
+<p>
+    Для надання нашому WEB застосунку необхідного вигляду, були застосовані різноманітні селектори тегів:
+</p>
+<ol>
+    <li>
+        <p>Загальні налаштування для тега body:</p>
+        <pre>
+body {
+    text-align: center;
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+        </pre>
+        <hr>
+    </li>
+
+    <li>
+        <p>Налаштування для заголовка сторінки, щоб він був прикріплений до верху сторінки при прокручуванні:</p>
+        <pre>
+header {
+    position:sticky;
+    top:0;
+    z-index:2;
+}
+        </pre>
+        <img src="labs/lab2/img/tagselectors1.png" alt="main page before scrolling">
+        <p>Рисунок 1 – Заголовок сайту до прокручування</p>
+        <img src="labs/lab2/img/tagselectors2.png" alt="main page after scrolling">
+        <p>Рисунок 2 – Заголовок сайту після прокручування</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Налаштування кольору фону та тексту, відступів та шрифту для навігаційної панелі:</p>
+        <pre>
+nav {
+    padding:10px;
+    background-color: rgba(0,0,0,0.7);
+    color:white;
+    margin-bottom: 10px;
+    font: 24px "Courier New", sans-serif;
+}
+        </pre>
+        <img src="labs/lab2/img/tagselectors3.png" alt="navigation pane view">
+        <p>Рисунок 3 – Навігаційна панель сайту</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Налаштування верстки та шрифту для головного вмісту сторінки:</p>
+        <pre>
+main {
+    font: 18px "Trebuchet MS", serif;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+        </pre>
+        <img src="labs/lab2/img/tagselectors4.png" alt="page's main content view">
+        <p>Рисунок 4 – Вигляд головного вмісту сторінки</p>
+    </li>
+</ol>

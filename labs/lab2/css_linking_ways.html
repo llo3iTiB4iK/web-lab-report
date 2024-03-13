@@ -1,0 +1,86 @@
+<style>
+    #content_area li div {
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    #content_area li b {
+        margin-left: 15px;
+    }
+</style>
+
+<p>Існує три типи підключення стилів, кожен з яких має різну реалізацію та використовується в різних випадках:</p>
+<ul>
+    <li>
+        Вбудований стиль (inline) - використовується для застосування унікального стилю для окремого HTML-елемента.
+        Реалізується за допомогою додавання атрибута style до бажаного елемента з CSS-правилами у лапках як значенням.
+        <div>
+            <b>Приклад:</b>
+            <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;body&gt;
+            &lt;h1 style="color:blue;text-align:center;"&gt;Це заголовок&lt;/h1&gt;
+            &lt;p style="color:red;"&gt;Це параграф.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</pre>
+        </div>
+        <hr>
+    </li>
+    <li>
+        Внутрішня таблиця стилів (internal) - використовується, якщо окрема сторінка має свій стиль, який не застосовується
+        ніде на інших сторінках. Реалізується за допомогою визначення css-правил у тегу &lt;style&gt; всередині розділу
+        &lt;head&gt; HTML сторінки.
+        <div>
+            <b>Приклад:</b>
+            <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;style&gt;
+                body {
+                  background-color: linen;
+                }
+                h1 {
+                  color: maroon;
+                  margin-left: 40px;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Це заголовок&lt;/h1&gt;
+            &lt;p&gt;Це параграф.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</pre>
+        </div>
+        <hr>
+    </li>
+    <li>
+        Зовнішня таблиця стилів (external) - використовується, якщо багато сторінок мають однакові стилі. Реалізується
+        в окремому файлі, де просто треба визначити css-правила та підключити його до кожної сторінки, де треба застосувати
+        ці стилі за допомогою тега &lt;link&gt; у розділі &lt;head&gt;.
+        <div>
+            <b>Приклад:</b>
+            <pre>
+HTML сторінка:
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Це заголовок&lt;/h1&gt;
+            &lt;p&gt;Це параграф.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+
+styles.css:
+    body {
+      background-color: lightblue;
+    }
+    h1 {
+      color: navy;
+      margin-left: 20px;
+    }</pre>
+        </div>
+    </li>
+</ul>

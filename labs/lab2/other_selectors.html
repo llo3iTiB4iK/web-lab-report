@@ -1,0 +1,84 @@
+<style>
+    #content_area img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        max-width: 90%;
+    }
+    #content_area img + p {
+        text-align: center;
+    }
+</style>
+
+<p>
+    Для надання нашому WEB застосунку необхідного вигляду, були застосовані різноманітні інші селектори та комбінації:
+</p>
+<ol>
+    <li>
+        <p>Універсальний селектор для задання алгоритму розрахунку розмірів блоків:</p>
+        <pre>
+* {
+    box-sizing: border-box;
+}
+        </pre>
+        <hr>
+    </li>
+
+    <li>
+        <p>Дочірній селектор для зміни стиля параграфу тексту, який іде на першому рівні вкладеності тега main:</p>
+        <pre>
+main>p {
+    background-color: rgba(255,255,255,0.8);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+        </pre>
+        <img src="labs/lab2/img/otherselectors1.png" alt="paragraph as the child of main tag">
+        <p>Рисунок 1 – Параграф тексту на першому рівні вкладності від main</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Комбінація селектора нащадка та псевдокласу first-child для зміни стилю клітинки, яка є першою серед дітей батьківського блока:</p>
+        <pre>
+#price_includes td:first-child {
+    width: 55%;
+}
+        </pre>
+        <img src="labs/lab2/img/otherselectors2.png" alt="table cell as the first child of table row">
+        <p>Рисунок 2 – Змінений стиль для клітинки, яка є першою дитиною батьківського блока (рядка таблиці)</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Застосування комбінації селектора нащадків, селектора дочірнього елемента та псевдокласу before, для встановлення іншого маркера для маркованого списку в елементі з ідентифікатором price_includes:</p>
+        <pre>
+#price_includes ul>li:before{
+    content: '✔';
+    color: green;
+    margin-right: 20px;
+}
+        </pre>
+        <img src="labs/lab2/img/otherselectors2.png" alt="changed list's marker style">
+        <p>Рисунок 3 – Змінений стиль маркера списку</p>
+        <hr>
+    </li>
+
+    <li>
+        <p>Застосування селектора атрибуту для кнопки, що здійснюює відправку форми входу:</p>
+        <pre>
+#login_page form input[type="submit"] {
+    width: 34%;
+    margin: 0 33%;
+    background-color: #409F29;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+}
+        </pre>
+        <img src="labs/lab2/img/otherselectors3.png" alt="form submit button view">
+        <p>Рисунок 4 – Вигляд кнопки відправки форми</p>
+    </li>
+</ol>

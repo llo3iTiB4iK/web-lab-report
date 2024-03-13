@@ -16,7 +16,14 @@
     "name": "Лабораторна робота №2",
     "path": "labs/lab2/",
     "sections": {
-      "Is coming soon...": ""
+      "Тема, Мета, Місце розташування лаби №2": "location.html",
+      "Способи підключення стилів": "css_linking_ways.html",
+      "Селектори тегів": "tag_selectors.html",
+      "Селектори класів": "class_selectors.html",
+      "Селектори ідентифікаторів": "id_selectors.html",
+      "Інші селектори": "other_selectors.html",
+      "CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий": "text_styling.html",
+      "ВИСНОВКИ": "conclusion.html"
     }
   }
 }
