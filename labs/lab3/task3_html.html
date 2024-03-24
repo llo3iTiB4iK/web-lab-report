@@ -1,0 +1,80 @@
+<style>
+    #content_area {
+        overflow: auto;
+    }
+</style>
+
+<pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/&gt;
+        &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+        &lt;title&gt;Завдання 3&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;nav class="menu"&gt;
+        &lt;a href="" class="link"&gt;Форми навчання&lt;/a&gt;
+        &lt;a href="" class="link"&gt;Заходи&lt;/a&gt;
+        &lt;a href="" class="link"&gt;Про Академію&lt;/a&gt;
+        &lt;a href="" class="link"&gt;Контакти&lt;/a&gt;
+        &lt;label for="city-dropdown" hidden&gt;&lt;/label&gt;
+        &lt;select name="city-dropdown" id="city-dropdown"&gt;
+            &lt;option value="Київ"&gt;Київ&lt;/option&gt;
+            &lt;option value="Львів"&gt;Львів&lt;/option&gt;
+            &lt;option value="Харків"&gt;Харків&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/nav&gt;
+    &lt;main&gt;
+        &lt;h2&gt;Для кого розроблена програма&lt;/h2&gt;
+        &lt;ul id="program_created_for"&gt;
+            &lt;li&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Школярі та випускники (15-18 років)&lt;/h3&gt;
+                    &lt;p&gt;отримають першу професію, не відкладаючи на потім свою мрію стати програмістом.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="100%"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Студенти ВНЗ (18-23 роки)&lt;/h3&gt;
+                    &lt;p&gt;освоять другу спеціальність паралельно з університетською освітою.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="100%"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Представники інших професій (23-55 років)&lt;/h3&gt;
+                    &lt;p&gt;яких не влаштовує поточна кар'єрна і фінансова перспектива, зможуть перевчитися на розробника ПЗ і отримати затребувану професію.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="100%"&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Всі бажаючі підвищити ІТ-кваліфікацію&lt;/h3&gt;
+                    &lt;p&gt;систематизують свої знання і отримають робочі навички, затребувані сучасному ІТ.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="100%"&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h2&gt;Як проходить навчання&lt;/h2&gt;
+        &lt;div id="how_education_passes"&gt;
+            &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="25%"&gt;
+            &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="25%"&gt;
+            &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="25%"&gt;
+        &lt;/div&gt;
+        &lt;h2&gt;Партнери Академії&lt;/h2&gt;
+        &lt;div id="academy_partners"&gt;
+            &lt;img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat image" width="45%"&gt;
+            &lt;div&gt;
+                &lt;h3&gt;Luxoft&lt;/h3&gt;
+                &lt;p&gt;&lt;span class="highlighted_word"&gt;Luxoft&lt;/span&gt; - глобальна технологічна компанія, одна із лідерів на ринку. послуг цифрової трансформації та створення програмних продуктів Luxoft пропонує індивідуальні ІТ-рішення, які заохочують до змін у бізнесах клієнтів в усьому світі.&lt;/p&gt;
+                &lt;p&gt;Luxoft об'єднує понад 13.000 спеціалістів із 22 країн світу зі штаб- квартирою у м. Цуг, Швейцарія. Україна є однією з найпотужніших локацій в географії Luxoft. Близько 3500 фахівців усіх ключових напрямків зосереджені в офісах Києва, Одеси і Дніпра.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</pre>

@@ -1,0 +1,86 @@
+<style>
+    #content {
+        width: 1000px;
+        height: 800px;
+        border-collapse: collapse;
+        font-weight: bold;
+        margin: auto;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+    .red {
+        background-color: red;
+    }
+    .bordered {
+        border: 1px solid black;
+    }
+    .margined {
+        margin: 20px;
+    }
+    .header {
+        height: 80px;
+        text-align: right;
+        padding: 20px 10px;
+    }
+    #header_inside {
+        width: 400px;
+        height: 40px;
+        float: left;
+        background-color: white;
+    }
+    .main {
+        width: 1000px;
+        height: 640px;
+        text-align: center;
+    }
+    #main_column1 {
+        width: 250px;
+        height: 640px;
+        border-right: 1px solid black;
+        float: left;
+    }
+    #main_column2 {
+        width: 748px;
+        height: 640px;
+        float: left;
+    }
+    #red_block {
+        width: 708px;
+        height: 60px;
+    }
+    #block3 {
+        width: 388px;
+        height: 520px;
+        float: left;
+        margin-top: 0;
+    }
+    #block4 {
+        width: 300px;
+        height: 520px;
+        float: left;
+    }
+    .footer {
+        height: 80px;
+        padding: 20px 10px;
+    }
+</style>
+
+<div id="content">
+    <div class="header yellow bordered">
+        <div id="header_inside" class="bordered"></div>
+        1
+    </div>
+    <div class="main bordered">
+        <div id="main_column1" class="blue">2</div>
+        <div id="main_column2">
+            <div id="red_block" class="red margined"></div>
+            <div id="block3" class="bordered margined">3</div>
+            <div id="block4" class="bordered blue">4</div>
+        </div>
+    </div>
+    <div class="footer yellow bordered">5</div>
+</div>

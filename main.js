@@ -29,7 +29,7 @@ function fillNav(data) {
             content_area.innerHTML = "";
             Object.entries(button_data["sections"]).forEach(function ([section_name, filename]) {
                 let asideButton = document.createElement("button");
-                asideButton.innerText = section_name;
+                asideButton.innerHTML = section_name;
                 sidebar.append(asideButton);
                 asideButton.onclick = function() {
                     const full_path = button_data["path"] + filename;

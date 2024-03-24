@@ -1,0 +1,41 @@
+<style>
+    table {
+        width: 1000px;
+        height: 800px;
+        border-collapse: collapse;
+        font-weight: bold;
+        margin: auto;
+    }
+    table td {
+        border: 1px solid black;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+    .header, .footer {
+        height: 80px;
+        color: white;
+        vertical-align: bottom;
+        padding-left: 50px;
+    }
+    .main {
+        text-align: center;
+    }
+</style>
+
+<table>
+    <tr>
+        <td colspan="3" class="header blue">1</td>
+    </tr>
+    <tr class="main">
+        <td class="yellow">5</td>
+        <td>4</td>
+        <td class="yellow">2</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="footer blue">3</td>
+    </tr>
+</table>

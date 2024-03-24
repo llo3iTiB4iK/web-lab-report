@@ -25,5 +25,21 @@
       "CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий": "text_styling.html",
       "ВИСНОВКИ": "conclusion.html"
     }
+  },
+  "lr3": {
+    "name": "Лабораторна робота №3",
+    "path": "labs/lab3/",
+    "sections": {
+      "Тема, Мета, Місце розташування лаби №3": "location.html",
+      "ЗАВДАННЯ №1.<br>Зовнішній вигляд макету. Код макету": "task1.html",
+      "ЗАВДАННЯ №2.<br>Фіксована таблична верстка": "task2_fixed_tabular.html",
+      "ЗАВДАННЯ №2.<br>Гумова таблична верстка": "task2_rubber_tabular.html",
+      "ЗАВДАННЯ №2.<br>Фіксована блокова верстка": "task2_fixed_block.html",
+      "ЗАВДАННЯ №2.<br>Гумова блокова верстка": "task2_rubber_block.html",
+      "ЗАВДАННЯ №3. FLEXBOX<br>Зовнішній вигляд сторінки": "task3_appearance.html",
+      "ЗАВДАННЯ №3. FLEXBOX<br>HTML-код": "task3_html.html",
+      "ЗАВДАННЯ №3. FLEXBOX<br>CSS-код": "task3_css.html",
+      "ВИСНОВКИ": "conclusion.html"
+    }
   }
 }
