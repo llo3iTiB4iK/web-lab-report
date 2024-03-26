@@ -41,5 +41,14 @@
       "ЗАВДАННЯ №3. FLEXBOX<br>CSS-код": "task3_css.html",
       "ВИСНОВКИ": "conclusion.html"
     }
+  },
+  "lr4": {
+    "name": "Лабораторна робота №4",
+    "path": "labs/lab4/",
+    "sections": {
+      "Тема, Мета, Місце розташування лаби №4": "location.html",
+      "Пояснення десктопної, планшетної та мобільної верстки": "explanation.html",
+      "Результати верстки": "results.html"
+    }
   }
 }
