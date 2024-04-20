@@ -1,0 +1,24 @@
+<style>
+    form > * {
+        display: block;
+        margin: 10px;
+    }
+</style>
+<form>
+    <label>* Ціле число
+        <input type="text" name="int_num">
+    </label>
+    <label>Дійсне число
+        <input type="text" name="float_num">
+    </label>
+    <label>* Дата у форматі DD.MM.YYYY
+        <input type="text" name="date">
+    </label>
+    <label>* Пароль
+        <input type="text" name="password">
+    </label>
+    <label>* Підтвердження пароля
+        <input type="text" name="password_confirm">
+    </label>
+    <input type="button" value="Валідація" onclick="validateForm();">
+</form>

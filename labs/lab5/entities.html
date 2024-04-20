@@ -1,0 +1,40 @@
+<p>
+    JavaScript entity - це спеціальний фрагмент коду JavaScript, який може бути вставлений безпосередньо як значення будь-якого атрибута HTML у документі.
+    Оскільки це код JavaScript, значення не обов'язково є статичним і може змінюватися на ходу згідно з маніпуляційним скриптом.
+    Синтаксис JavaScript entity виглядає так:
+</p>
+<pre>   &{ JavaScript-вказівки };</pre>
+<p>Нижче показано два HTML-теги: перший використовує звичайне HTML-значення для свого атрибута, другий - значення JavaScript entity:</p>
+<dl>
+    <dd>Звичайне HTML-значення:</dd>
+    <dt>
+        <pre>
+        &lt;body background="image1.gif"&gt;
+        </pre>
+    </dt>
+    <dd>Значення JavaScript entity:</dd>
+    <dt>
+        <pre>
+        &lt;body background="&{JavaScript-statements };"&gt;
+        </pre>
+    </dt>
+</dl>
+<p>
+    Особливістю у другому випадку є те, що значення атрибута HTML тепер є не статичним, а динамічним - його значенням можна маніпулювати за допомогою JavaScript.
+</p>
+<p>
+    Всередину entity може бути вбудований будь-який оператор JavaScript або змінна.
+    Ось простий приклад використання JavaScript entities для призначення різного шляху до зображення залежно від часу доби:
+</p>
+<pre>
+&lt;script&gt;
+    let my_image = "day.gif";
+    const today = new Date();
+    const hour = today.getHours();
+    if (hour > 12)
+        my_image="night.gif";
+&lt;/script&gt;
+
+&lt;img src="&{my_image};"&gt;
+</pre>
+<p>Таким чином, при завантаженні сторінки враховується час, і якщо година в поточний момент більше за 12 - показується зображення night.gif, а якщо ні - то day.gif.</p>

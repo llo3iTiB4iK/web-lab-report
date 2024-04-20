@@ -48,6 +48,11 @@ function fillNav(data) {
                         });
                 }
             })
+            if ("script" in button_data) {
+                let scriptElement = document.createElement("script");
+                scriptElement.src = button_data["path"] + button_data["script"];
+                document.body.appendChild(scriptElement);
+            }
         }
     });
 }

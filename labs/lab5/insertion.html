@@ -1,0 +1,69 @@
+<p>
+    Тег &lt;script&gt; використовується для вставки JS-скриптів на веб-сторінку.
+    Це дає можливість динамічної зміни вмісту та поведінки сторінки.
+    Ось кілька способів, якими можна використовувати тег &lt;script&gt;:
+</p>
+<ul>
+    <li>
+        <h4>Вкладення в HTML</h4>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Вставка скриптів&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Вставка скриптів на веб-сторінку&lt;/h1&gt;
+    &lt;script&gt;
+        // JavaScript код тут
+        console.log("Це скрипт, вбудований безпосередньо в HTML");
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </li>
+    <li>
+        <h4>Зовнішні файли скриптів</h4>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Вставка скриптів&lt;/title&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;!-- Скрипт виноситься в окремий файл script.js --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Вставка скриптів на веб-сторінку&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </li>
+    <li>
+        <h4>Динамічна вставка через JavaScript</h4>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Вставка скриптів&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Вставка скриптів на веб-сторінку&lt;/h1&gt;
+    &lt;div id="scriptContainer"&gt;&lt;/div&gt;
+    &lt;script&gt;
+        // Створення нового тегу script і вставка його на сторінку
+        let script = document.createElement("script");
+        script.src = "script.js";
+        document.getElementById("scriptContainer").appendChild(script);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </li>
+</ul>
+<p>
+    Вибір конкретного методу вставки скриптів залежить від потреб та структури проєкту.
+    Також, варто звернути увагу на правильне розміщення скриптів для досягнення оптимальної продуктивності та сумісності з різними браузерами.
+</p>

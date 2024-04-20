@@ -50,5 +50,21 @@
       "Пояснення десктопної, планшетної та мобільної верстки": "explanation.html",
       "Результати верстки": "results.html"
     }
+  },
+  "lr5": {
+    "name": "Лабораторна робота №5",
+    "path": "labs/lab5/",
+    "sections": {
+      "ПОСТАНОВКА ЗАДАЧІ<br>Лабораторної роботи №5": "definition.html",
+      "Способи функціонального застосування JavaScript.<br>Схема URL": "url_scheme.html",
+      "Способи функціонального застосування JavaScript.<br>Обробник подій": "event_handler.html",
+      "Способи функціонального застосування JavaScript.<br>Підстановка (entity)": "entities.html",
+      "Способи функціонального застосування JavaScript.<br>Вставка (тег SCRIPT)": "insertion.html",
+      "МАСИВИ (4 пункт)": "arrays.html",
+      "Виконання 6 пункту": "validation.html",
+      "Застосування JavaScript у власному WEB-застосунку": "js_in_my_web_project.html",
+      "ВИСНОВКИ": "conclusion.html"
+    },
+    "script": "script.js"
   }
 }

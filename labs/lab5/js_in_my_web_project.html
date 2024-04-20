@@ -1,0 +1,57 @@
+<p>На сторінках car.html та cars.html у клітинках "Завдаток" таблиць цін на кнопку "?" додамо обробник події-натискання, що буде виводити інформаційне повідомлення:</p>
+<pre>
+&lt;script&gt;
+    document.querySelector(".question_button").onclick = function() {
+        window.alert('* На час дії договору про оренду необхідно внести відповідну заставу, яка
+               буде повернена клієнтові в 100% обсязі, якщо умови договору не були порушені.');
+    }
+&lt;/script&gt;
+</pre>
+<hr>
+<p>
+    На сторінці cars.html зробимо те ж саме, тільки розширимо скрипт з урахуванням того, що на цій сторінці маємо декілька авто,
+    а також додамо обробку події-натискання на окреме авто у списку - відкриття сторінки цього авто:
+</p>
+<pre>
+&lt;script&gt;
+    for (let question_button of document.getElementsByClassName("question_button")) {
+        question_button.onclick = function() {
+            window.alert('* На час дії договору про оренду необхідно внести відповідну
+                    заставу, яка буде повернена клієнтові в 100% обсязі, якщо умови
+                    договору не були порушені.');
+        }
+    }
+    for (let auto of document.querySelectorAll("#auto_list>li")) {
+        auto.addEventListener("click", function() { window.location.href = "car.html"; })
+    }
+&lt;/script&gt;
+</pre>
+<hr>
+<p>
+    На сторінці login.html додамо обробку події-відправки форми входу, а саме перехід на сторінку адміністрування:
+</p>
+<pre>
+    &lt;form class="left_aligned"
+        onsubmit="window.location.href='administration.html'; return false;"&gt;
+</pre>
+<hr>
+<p>
+    На сторінці administration.html додамо обробку події-вводу в поле пошуку авто, а саме фільтрування авто у переліку:
+</p>
+<pre>
+...
+    &lt;input type="text" placeholder="Введіть марку/модель/рік" oninput="filterCars(this.value)"&gt;
+...
+&lt;script&gt;
+    function filterCars(queryText) {
+        document.querySelectorAll('#auto_list>li').forEach(car => {
+            let car_title = car.querySelector('h3').textContent;
+            const to_show = car_title.includes(queryText)
+                    || car_title.toLowerCase().includes(queryText);
+            car.hidden = !to_show;
+        })
+    }
+&lt;/script&gt;
+</pre>
+<hr>
+<p>Пізніше на сторінку адміністрування буде додано функціонал інтерактивного додавання, редагування та видалення авто зі списку.</p>
