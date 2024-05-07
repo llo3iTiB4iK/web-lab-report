@@ -1,0 +1,16 @@
+<button onclick="console.log(modifyFruitsArray(fruits));">Зробити знижку 20% та додати id</button>
+<pre>
+const fruits = [
+    { name: "apple", price: 200 },
+    { name: "orange", price: 300 },
+    { name: "grapes", price: 750 },
+];
+
+function modifyFruitsArray(arr) {
+    return arr.map((obj, index) => {
+        obj.price = 0.8 * obj.price;
+        obj.id = index;
+        return obj;
+    })
+}
+</pre>

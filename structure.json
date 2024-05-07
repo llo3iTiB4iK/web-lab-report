@@ -66,5 +66,19 @@
       "ВИСНОВКИ": "conclusion.html"
     },
     "script": "script.js"
+  },
+  "lr6": {
+    "name": "Лабораторна робота №6",
+    "path": "labs/lab6/",
+    "sections": {
+      "ПОСТАНОВКА ЗАДАЧІ<br>Лабораторної роботи №6": "definition.html",
+      "Завдання 1": "task1.html",
+      "Завдання 3": "task3.html",
+      "Завдання 5": "task5.html",
+      "Завдання 7": "task7.html",
+      "Завдання 9": "task9.html",
+      "Завдання 10": "task10.html"
+    },
+    "script": "script.js"
   }
 }

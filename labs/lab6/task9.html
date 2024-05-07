@@ -1,0 +1,24 @@
+<button onclick="console.log(countTags(tweets));">Порахувати кількість тегів</button>
+<pre>
+const tweets = [
+    { id: "000", likes: 5, tags: ["js", "nodejs"] },
+    { id: "001", likes: 2, tags: ["html", "css"] },
+    { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+    { id: "003", likes: 8, tags: ["css", "react"] },
+    { id: "004", likes: 0, tags: ["js", "nodejs", "react"] }
+];
+
+function countTags(posts) {
+    const tagCounts = {};
+    for (let post of posts) {
+        for (let tag of post.tags) {
+            if (tag in tagCounts) {
+                tagCounts[tag] += 1;
+            } else {
+                tagCounts[tag] = 1;
+            }
+        }
+    }
+    return tagCounts;
+}
+</pre>

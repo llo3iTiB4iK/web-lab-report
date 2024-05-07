@@ -1,0 +1,19 @@
+<button onclick="console.log(checkBrackets(window.prompt('Введіть код для перевірки дужок:')));">Перевірити правильність закриття дужок</button>
+<pre>
+function checkBrackets(str) {
+    const stack = [];
+    const openBrackets = ['(', '{', '['];
+    const closeBrackets = [')', '}', ']'];
+    for (let char of str) {
+        if (openBrackets.includes(char)) {
+            stack.push(char);
+        } else if (closeBrackets.includes(char)) {
+            if (stack.length === 0) { return false; }
+            if (stack.pop() !== openBrackets[closeBrackets.indexOf(char)]) {
+                return false;
+            }
+        }
+    }
+    return stack.length === 0;
+}
+</pre>

@@ -1,0 +1,28 @@
+<button onclick="generateProduct()">Створити об'єкт товару</button>
+<pre>
+let counter = 0;
+
+function createProduct(obj, callback) {
+    obj.id = counter;
+    ++counter;
+    callback(obj);
+}
+
+function logProduct(product) {
+    console.log(product);
+}
+
+function logTotalPrice(product) {
+    console.log(product.price * product.quantity);
+}
+
+function generateProduct() {
+    const name = window.prompt("Введіть назву товару:");
+    const price = window.prompt("Введіть ціну за одиницю:");
+    const quantity = window.prompt("Введіть кількість одиниць товару:");
+    const productObj = { name, price, quantity };
+    const printAllInfo = window.confirm("Натисніть 'Так' щоб вивести всю інформацію про товар
+            або 'Ні' щоб вивести лише загальну ціну за товар")
+    createProduct(productObj, printAllInfo ? logProduct : logTotalPrice);
+}
+</pre>

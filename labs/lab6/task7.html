@@ -1,0 +1,18 @@
+<button onclick="createClient();">Створити об'єкт класу Client та вивести у консоль його властивості</button>
+<pre>
+class Client {
+    #login;
+    #email;
+    getLogin() { return this.#login; }
+    setLogin(new_login) { this.#login = new_login; }
+    getEmail() { return this.#email; }
+    setEmail(new_email) { this.#email = new_email; }
+}
+
+function createClient() {
+    const client = new Client();
+    client.setLogin(window.prompt("Введіть логін:"));
+    client.setEmail(window.prompt("Введіть email"));
+    console.log(`Логін: ${client.getLogin()}\nemail: ${client.getEmail()}`);
+}
+</pre>

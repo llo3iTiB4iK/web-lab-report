@@ -1,0 +1,20 @@
+<button onclick="filterAndSortByExpireDate(medicines);">Відфільтрувати та відсортувати медикаменти за строком придатності</button>
+<pre>
+const medicines = {
+    "Агалгін": new Date("2022-05-01"),
+    "Ношпа": new Date("2025-07-02"),
+    "Альфахолін": new Date("2024-12-21"),
+    "Аспірин": new Date("2022-08-15"),
+    "Аспаркам": new Date("2024-04-18")
+};
+
+const getObjectKeys = object => Object.keys(object);
+
+const filterAndSortByExpireDate = object => {
+    const today = new Date();
+    const medications = getObjectKeys(object);
+    const filtered = medications.filter(medication => object[medication] >= today);
+    filtered.sort((a, b) => medicines[a] - medicines[b]);
+    console.log(filtered);
+};
+</pre>
