@@ -1,0 +1,13 @@
+<div class="widget">
+    <p>Background color: <span class="color">-</span></p>
+    <button type="button" class="change-color" onclick="task9Fun()">Change color</button>
+</div>
+<pre>
+
+    JS:
+function task9Fun() {
+    const new_color = getRandomHexColor();
+    document.body.style.backgroundColor = new_color;
+    document.querySelector("span.color").textContent = new_color;
+}
+</pre>

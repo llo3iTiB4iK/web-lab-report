@@ -1,0 +1,28 @@
+<div id="controls">
+    <input type="number" min="1" max="100" step="1" />
+    <button type="button" data-create onclick="createBoxes(this.previousElementSibling.value)">Create</button>
+    <button type="button" data-destroy onclick="destroyBoxes()">Destroy</button>
+</div>
+<div id="boxes"></div>
+<pre>
+
+    JS:
+function createBoxes(amount) {
+    if (amount >= 1 && amount <=100) {
+        const boxes = document.querySelector('div#boxes');
+        for (let i= 0; i < amount; i++) {
+            let size = 30 + 10 * i;
+            let newDiv = document.createElement('div');
+            newDiv.style.height = `${size}px`;
+            newDiv.style.width = `${size}px`;
+            newDiv.style.backgroundColor = getRandomHexColor();
+            boxes.appendChild(newDiv);
+        }
+        document.getElementById('controls').firstElementChild.value = "";
+    }
+}
+
+function destroyBoxes() {
+    document.querySelector('div#boxes').innerHTML = "";
+}
+</pre>

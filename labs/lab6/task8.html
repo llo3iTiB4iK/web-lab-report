@@ -1,0 +1,35 @@
+<form class="login-form" onsubmit="task8Fun(event)">
+    <label>
+        Email
+        <input type="email" name="email" />
+    </label>
+    <label>
+        Password
+        <input type="password" name="password" />
+    </label>
+    <button type="submit">Log in</button>
+</form>
+<pre>
+
+    HTML:
+&lt;form class="login-form" onsubmit="task8Fun(event)"&gt;
+...
+
+    JS:
+function task8Fun(event) {
+    event.preventDefault();
+    const fieldValues = {};
+    for (let field of event.target.elements) {
+        if (field.type !== 'submit') {
+            if (field.value.length === 0) {
+                window.alert('All form fields must be filled in');
+                return;
+            } else {
+                fieldValues[field.name] = field.value.trim();
+            }
+        }
+    }
+    console.log(fieldValues);
+    event.target.reset();
+}
+</pre>

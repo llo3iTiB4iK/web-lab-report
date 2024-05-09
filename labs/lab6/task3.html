@@ -1,0 +1,17 @@
+<h3>Завдання №3</h3>
+<label> <input type="text" id="task3_input"> </label>
+<button onclick="hideOrShowPassword(event, 'task3_input')">Приховати</button>
+<pre>
+
+    HTML:
+&lt;h3&gt;Завдання №3&lt;/h3&gt;
+&lt;label&gt; &lt;input type="text" id="task3_input"&gt; &lt;/label&gt;
+&lt;button onclick="hideOrShowPassword(event, 'task3_input')"&gt;Приховати&lt;/button&gt;
+
+    JS:
+function hideOrShowPassword(event, inputId) {
+    const buttonText = event.target.innerText;
+    document.getElementById(inputId).type = (buttonText === "Приховати") ? "password" : "text";
+    event.target.innerText = (buttonText === "Приховати") ? "Розкрити" : "Приховати";
+}
+</pre>

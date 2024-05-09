@@ -1,0 +1,15 @@
+<h3>Завдання №1</h3>
+<button onclick="logValueToConsole('task1_input')">SHOW ME</button>
+<label> <input type="text" id="task1_input"> </label>
+<pre>
+
+    HTML:
+&lt;h3&gt;Завдання №1&lt;/h3&gt;
+&lt;button onclick="logValueToConsole('task1_input')"&gt;SHOW ME&lt;/button&gt;
+&lt;label&gt; &lt;input type="text" id="task1_input"&gt; &lt;/label&gt;
+
+    JS:
+function logValueToConsole(elementId) {
+    console.log(document.getElementById(elementId).value);
+}
+</pre>

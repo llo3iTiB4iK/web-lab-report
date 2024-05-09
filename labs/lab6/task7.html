@@ -1,0 +1,46 @@
+<ul id="categories">
+    <li class="item">
+        <h2>Animals</h2>
+        <ul>
+            <li>Cat</li>
+            <li>Hamster</li>
+            <li>Horse</li>
+            <li>Parrot</li>
+        </ul>
+    </li>
+    <li class="item">
+        <h2>Products</h2>
+        <ul>
+            <li>Bread</li>
+            <li>Prasley</li>
+            <li>Cheese</li>
+        </ul>
+    </li>
+    <li class="item">
+        <h2>Technologies</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </li>
+</ul>
+<button onclick="task7Fun()">Вивести категорії</button>
+<pre>
+
+    HTML:
+&lt;button onclick="task7Fun()"&gt;Вивести категорії&lt;/button&gt;
+
+    JS:
+function task7Fun() {
+    const list = document.querySelector("ul#categories");
+    const categories = list.querySelectorAll("li.item");
+    console.log('Number of categories: ' + categories.length);
+    categories.forEach(category => {
+        console.log('Category: ' + category.querySelector("h2").innerText);
+        console.log('Elements: ' + category.querySelectorAll("li").length);
+    })
+}
+</pre>
