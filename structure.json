@@ -95,5 +95,14 @@
       "Завдання 10": "task10.html"
     },
     "script": "script.js"
+  },
+  "lr7": {
+    "name": "Лабораторна робота №7",
+    "path": "labs/lab7/",
+    "sections": {
+      "Тема, Мета, Місце розташування лаби №7": "location.html",
+      "Завдання 1": "task1.html",
+      "Завдання 2": "task2.html"
+    }
   }
 }
