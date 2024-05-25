@@ -1,0 +1,63 @@
+<img src="labs/lab8/img/4.gif" alt="calculator react application" width="90%">
+<hr>
+<h4>App.jsx:</h4>
+<pre>
+import { useState, useRef } from "react";
+import "./App.css";
+
+function App() {
+  const inputRef = useRef(null);
+  const resultRef = useRef(null);
+  const [result, setResult] = useState(0);
+
+  function plus(e) {
+    e.preventDefault();
+    setResult((result) =&gt; result + Number(inputRef.current.value));
+  };
+
+  function minus(e) {
+    e.preventDefault();
+    setResult((result) =&gt; result - Number(inputRef.current.value));
+  };
+
+  function times(e) {
+    e.preventDefault();
+    setResult((result) =&gt; result * Number(inputRef.current.value));
+  };
+
+  function divide(e) {
+    e.preventDefault();
+    setResult((result) =&gt; result / Number(inputRef.current.value));
+  };
+
+  function resetInput(e) {
+    e.preventDefault();
+    inputRef.current.value = 0;
+  };
+
+  function resetResult(e) {
+    e.preventDefault();
+    setResult(0);
+  };
+
+  return (
+    &lt;div className="App"&gt;
+      &lt;div&gt;
+        &lt;h1&gt;Simplest Working Calculator&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;form&gt;
+        &lt;p ref={resultRef}&gt;{result}&lt;/p&gt;
+        &lt;input pattern="[0-9]" ref={inputRef} type="number" placeholder="Type a number"/&gt;
+        &lt;button onClick={plus}&gt;add&lt;/button&gt;
+        &lt;button onClick={minus}&gt;subtract&lt;/button&gt;
+        &lt;button onClick={times}&gt;multiply&lt;/button&gt;
+        &lt;button onClick={divide}&gt;divide&lt;/button&gt;
+        &lt;button onClick={resetInput}&gt;reset input&lt;/button&gt;
+        &lt;button onClick={resetResult}&gt;reset result&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</pre>

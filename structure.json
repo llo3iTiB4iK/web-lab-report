@@ -104,5 +104,16 @@
       "Завдання 1": "task1.html",
       "Завдання 2": "task2.html"
     }
+  },
+  "lr8": {
+    "name": "Лабораторна робота №8",
+    "path": "labs/lab8/",
+    "sections": {
+      "Сертифікат та оцінка": "accomplishment.html",
+      "Тиждень 1": "week1.html",
+      "Тиждень 2": "week2.html",
+      "Тиждень 3": "week3.html",
+      "Тиждень 4": "week4.html"
+    }
   }
 }
